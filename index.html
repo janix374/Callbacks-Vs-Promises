@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="item1">
+        <h3>Callbacks vs. Promises </h3>
+        <p>
+            A key difference between the two is when using the callback approach, we’d normally just pass a callback into a
+            function that would then get called upon completion in order to get the result of something. In promises, however,
+            you attach callbacks on the returned promise object
+        </p>
+        <p>
+            One common issue for using the callback approach is that when we end up having to perform multiple asynchronous operations at a time,
+            we can easily end up with something that is known as callback hell.
+        </p>
+    </div>
+    <div class="item2">
+        <h4>Callback function</h4>
+        <form id="formForCallback" >
+            <select id="selectCallback" name="user"></select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="item3">
+        <h4></h4>
+        <p id="displayFieldCallback">
+
+        </p>
+    </div>
+    <div class="item4">
+        <h4>Promise function</h4>
+        <form id="formForPromise" >
+            <select id="selectPromise" name="user"></select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="item5">
+        <h4></h4>
+        <p id="displayFieldPromise">
+
+        </p>
+    </div>
+</div>
+
+<script type="module" defer src="js.js"></script>
+</body>
+</html>

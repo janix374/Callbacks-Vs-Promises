@@ -1,0 +1,27 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: callback; }
+.item3 { grid-area: callbackRight; }
+.item4 { grid-area: promise; }
+.item5 { grid-area: promiseRight; }
+
+body{
+    background-color: #CCE3FF;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'header header header '
+            'callback callback callbackRight'
+            'promise promise promiseRight';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+}
